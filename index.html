@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uz">
+< lang="uz">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="extra.css">
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
-<body>
+<>
 <div id="login" class="lg">
   <form id="loginForm" class="lg-box" novalidate>
     <div class="lg-brand">
@@ -49,19 +49,34 @@
 window.addEventListener('error',function(e){alert('JS xato: '+e.message)});
 window.addEventListener('unhandledrejection',function(e){alert('Xato: '+(e.reason&&e.reason.message||e.reason))});
 </script>
-<script src="config.js"></script>
-<script src="data.js"></script>
-<script src="render.js"></script>
-<script src="render2.js"></script>
-<script src="forms.js"></script>
-<script src="events.js"></script>
-<script src="events2.js"></script>
-<script src="auth.js"></script>
-  <script src="roles.js"></script>
-<script src="tg.js"></script>
-<script src="receipt.js"></script>
-<script src="csv.js"></script>
-<script src="more.js"></script>
-<script src="app.js"></script>
-</body>
+    <!-- Pastki menyu (body ichida bo'lishi kerak) -->
+    <nav class="bottom-nav">
+      <a href="#home" class="nav-item">Bosh</a>
+      <a href="#leads" class="nav-item">Leadlar</a>
+      <a href="#students" class="nav-item">Oʻquvchi</a>
+      <a href="#groups" class="nav-item">Guruh</a>
+      <a href="#attendance" class="nav-item">Davomat</a>
+      <a href="#payments" class="nav-item">Toʻlov</a>
+      <a href="#more" class="nav-item">
+        <span>⚙️</span>
+        <span>Yana</span>
+      </a>
+    </nav>
+
+    <!-- Barcha skriptlar body yopilishidan oldin bo'lishi kerak -->
+    <script src="config.js"></script>
+    <script src="data.js"></script>
+    <script src="render.js"></script>
+    <script src="render2.js"></script>
+    <script src="forms.js"></script>
+    <script src="events.js"></script>
+    <script src="events2.js"></script>
+    <script src="auth.js"></script>
+    <script src="roles.js"></script>
+    <script src="tg.js"></script>
+    <script src="receipt.js"></script>
+    <script src="csv.js"></script>
+    <script src="more.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
