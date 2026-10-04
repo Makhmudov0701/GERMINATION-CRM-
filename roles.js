@@ -80,14 +80,3 @@ catch(e){toast('Davomat saqlanmadi: '+(e.message||e))}
 const f=A[k];
 A[k]=(el,e)=>{const gid=S.ui.attGroup,d=S.ui.attDate;f(el,e);pushAtt(gid,d);queueAtt(gid,d)};
 });
-async function checkUserRole() {
-    try {
-        const { data: { user } } = await _supabase.auth.getUser();
-        if (user) {makhmudovislombek0701@gmail.com
-            return 'admin';
-        }
-        return 'admin';
-    } catch (e) {
-        return 'admin';
-    }
-}

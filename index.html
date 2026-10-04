@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uz">
+< lang="uz">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="extra.css">
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
+<>
 <div id="login" class="lg">
   <form id="loginForm" class="lg-box" novalidate>
     <div class="lg-brand">
@@ -45,8 +46,8 @@
 <div id="mroot"></div>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 <script>
-  window.addEventListener('error', function(e) { console.log(e.message); });
-  window.addEventListener('unhandledrejection', function(e) { console.log(e.reason); });
+window.addEventListener('error',function(e){alert('JS xato: '+e.message)});
+window.addEventListener('unhandledrejection',function(e){alert('Xato: '+(e.reason&&e.reason.message||e.reason))});
 </script>
     <!-- Pastki menyu (body ichida bo'lishi kerak) -->
     <nav class="bottom-nav">
