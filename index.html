@@ -46,8 +46,8 @@
 <div id="mroot"></div>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 <script>
-window.addEventListener('error',function(e){alert('JS xato: '+e.message)});
-window.addEventListener('unhandledrejection',function(e){alert('Xato: '+(e.reason&&e.reason.message||e.reason))});
+  window.addEventListener('error', function(e) { console.log(e.message); });
+  window.addEventListener('unhandledrejection', function(e) { console.log(e.reason); });
 </script>
     <!-- Pastki menyu (body ichida bo'lishi kerak) -->
     <nav class="bottom-nav">
